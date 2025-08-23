@@ -1,0 +1,10 @@
+{
+  "summary": {
+    "start_time": "2025-08-20T21:57:27.304415",
+    "end_time": "2025-08-20T21:57:28.009626",
+    "status": "failed",
+    "error": "'NoneType' object has no attribute 'items'",
+    "output_directory": "output"
+  },
+  "partial_results": {}
+}
