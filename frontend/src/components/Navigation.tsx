@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, Home, AlertTriangle, Users, Calendar, MessageCircle, Plus } from "lucide-react";
+import { Heart, Home, AlertTriangle, Users, Calendar, MessageCircle, Gift, LifeBuoy } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 import {
@@ -20,6 +20,8 @@ const Navigation = () => {
   const navItems = [
     { id: "/", icon: <Home size={20} />, label: "Home", path: "/" },
     { id: "/emergency", icon: <AlertTriangle size={20} />, label: "Emergency Requests", path: "/emergency" },
+    { id: "/give-gain", icon: <Gift size={20} />, label: "Give & Gain", path: "/give-gain" },
+    { id: "/emergency-hub", icon: <LifeBuoy size={20} />, label: "Emergency Hub", path: "/emergency-hub" },
     { id: "/about", icon: <Users size={20} />, label: "About", path: "/about" },
     { id: "/events", icon: <Calendar size={20} />, label: "Events", path: "/events" },
     { id: "/donate", icon: <Heart size={20} />, label: "Donate", path: "/donate" },

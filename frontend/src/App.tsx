@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import Layout from "@/components/Layout"; // ✅ New layout with nav inside
+import GiveGain from "./pages/GiveGain";
+import EmergencyHub from "./pages/EmergencyHub";
 
 import Index from "./pages/Index";
 import EmergencyRequests from "./pages/EmergencyRequests";
@@ -35,6 +37,8 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/events" element={<Events />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/give-gain" element={<GiveGain />} />
+              <Route path="/emergency-hub" element={<EmergencyHub />} />
             </Routes>
           </Layout>
         </BrowserRouter>
