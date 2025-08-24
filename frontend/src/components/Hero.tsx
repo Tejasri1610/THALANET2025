@@ -44,7 +44,7 @@ const Hero = () => {
               variant="whatsapp"
               size="xl"
               className="min-w-[250px]"
-              onClick={() => window.open("https://wa.me/14155238886?text=join%20mean-team", "_blank")}
+              onClick={() => window.open("https://wa.me/14155238886?text=join%20practical-package", "_blank")}
             >
               <MessageCircle className="mr-2" size={24} />
               Start Chat on WhatsApp
