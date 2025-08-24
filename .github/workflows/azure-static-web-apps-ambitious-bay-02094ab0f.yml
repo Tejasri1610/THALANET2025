@@ -45,7 +45,7 @@ jobs:
           ###### Repository/Build Configurations ######
           app_location: "/" # frontend folder#
           api_location: "" # optional
-          output_location: "build" # React: build, Vue: dist, Next.js: .next
+          output_location: "dist" # React: build, Vue: dist, Next.js: .next
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End ######
 
@@ -59,6 +59,7 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
 
 
 
